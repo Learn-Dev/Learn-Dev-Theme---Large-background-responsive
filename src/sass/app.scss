@@ -1,0 +1,200 @@
+@import "compass/reset";
+@import "compass/css3";
+
+body{
+	font-family:Open sans;
+}
+
+
+
+/**********************************
+************HEADER*****************
+**********************************/
+
+header{
+	background:url(../img/covers/95.jpg) no-repeat top center fixed;
+	@include background-size(cover);
+	.bg-cover{
+		position:absolute;
+		right:0;
+		left:0;
+		bottom:0;
+		z-index:1;
+		height:100%;
+
+		background-color:rgba(0, 5, 8, 0.75);
+	}
+}
+.header-content{
+	position:fixed;
+	right:0;
+	left:0;
+	top:33%;
+	z-index:2;
+
+	text-align:center;
+	font-family:Open sans;
+
+	color:#FFF;
+	h1{
+		text-transform:uppercase;
+		
+		letter-spacing:2px;
+
+		font-size:56px;
+		font-weight:600;
+	}
+	p{
+		line-height:1.5em;
+
+		font-size:18px;
+		font-weight:300;
+
+		padding:50px 100px;
+	}
+}
+
+.header-btns{
+	margin:10px 0;
+}
+.scroll-down{
+	position:absolute;
+	right:0;
+	left:0;
+	bottom:0;
+
+	text-align:center;
+
+
+}
+/**********************************
+************, NAVBAR **************
+**********************************/
+.navbar{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index:3;
+
+	@include transition-property(all);
+	@include transition-duration(0.8s);
+}
+.navbar.full{
+	height:100px;
+	line-height:100px;
+}
+.navbar.shrink{
+	height:60px;
+	line-height:60px;
+
+	background:#222;
+	.navbar-logo img{
+		height:40px;
+	}
+}
+.navbar-logo{
+	float:left;
+	img{
+		vertical-align:middle;
+	}
+}
+.navbar-menu{
+	overflow:hidden;
+	text-align:right;
+	a{
+		text-decoration:none;
+
+		text-transform:uppercase;
+		font-size:14px;
+
+		color:#FFF;
+		padding:0 15px;
+	}
+	.active{
+		color:#fec503;
+	}
+}
+
+/**********************************
+*******, STYLES GENERIQUES ********
+**********************************/
+.btn{
+	text-decoration:none;
+
+	@include border-radius(5px);
+
+	padding:10px 20px;
+	margin:0 10px;
+
+	@include transition-property(all);
+	@include transition-duration(0.8s);
+
+}
+.btn-transparent{
+	border:1px solid #FFF;
+	color:#FFF;
+	&:hover{
+		background:#FFF;
+		color:#000;
+	}
+}
+.btn-yellow{
+	background:#fec503;
+	color:#000;
+
+	border:1px solid #fec503;
+	&:hover{
+		background:transparent;
+		color:#FFF;
+	}
+}
+.container{
+	max-width:1170px;
+	margin:auto;
+}
+
+.content{
+	height:1000px;
+	position:absolute;
+	right:0;
+	left:0;
+}
+
+@media only screen and (max-width:768px){
+	.navbar-logo{
+		margin-left:20px;
+	}
+	.navbar-menu{
+		display:none;
+	}
+
+	.navbar.shrink .navbar-ico-resp{
+		position:relative;
+		display:block;
+		float:right;
+
+		width:45px;
+		height:60px;
+		cursor:pointer;
+		&:after{
+			content:'';
+			position:absolute;
+			display:block;
+			width:1rem;
+			height:0;
+			top:15px;
+			left:15px;
+			box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
+		}
+	}
+	.responsive.shrink .navbar-menu{
+		display:block;
+		position:absolute;
+		top:60px;
+		right:0;
+		left:0;
+		text-align:center;
+	}
+	.navbar-ico-resp{overflow:hidden;margin-right:20px;}
+}

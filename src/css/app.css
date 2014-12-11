@@ -1,0 +1,304 @@
+/* line 17, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/app.scss */
+body {
+  font-family: Open sans;
+}
+
+/**********************************
+************HEADER*****************
+**********************************/
+/* line 14, ../sass/app.scss */
+header {
+  background: url(../img/covers/95.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 17, ../sass/app.scss */
+header .bg-cover {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+  background-color: rgba(0, 5, 8, 0.75);
+}
+
+/* line 28, ../sass/app.scss */
+.header-content {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 33%;
+  z-index: 2;
+  text-align: center;
+  font-family: Open sans;
+  color: #FFF;
+}
+/* line 39, ../sass/app.scss */
+.header-content h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 56px;
+  font-weight: 600;
+}
+/* line 47, ../sass/app.scss */
+.header-content p {
+  line-height: 1.5em;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 50px 100px;
+}
+
+/* line 57, ../sass/app.scss */
+.header-btns {
+  margin: 10px 0;
+}
+
+/* line 60, ../sass/app.scss */
+.scroll-down {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+/**********************************
+************, NAVBAR **************
+**********************************/
+/* line 73, ../sass/app.scss */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+/* line 83, ../sass/app.scss */
+.navbar.full {
+  height: 100px;
+  line-height: 100px;
+}
+
+/* line 87, ../sass/app.scss */
+.navbar.shrink {
+  height: 60px;
+  line-height: 60px;
+  background: #222;
+}
+/* line 92, ../sass/app.scss */
+.navbar.shrink .navbar-logo img {
+  height: 40px;
+}
+
+/* line 96, ../sass/app.scss */
+.navbar-logo {
+  float: left;
+}
+/* line 98, ../sass/app.scss */
+.navbar-logo img {
+  vertical-align: middle;
+}
+
+/* line 102, ../sass/app.scss */
+.navbar-menu {
+  overflow: hidden;
+  text-align: right;
+}
+/* line 105, ../sass/app.scss */
+.navbar-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #FFF;
+  padding: 0 15px;
+}
+/* line 114, ../sass/app.scss */
+.navbar-menu .active {
+  color: #fec503;
+}
+
+/**********************************
+*******, STYLES GENERIQUES ********
+**********************************/
+/* line 122, ../sass/app.scss */
+.btn {
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+/* line 134, ../sass/app.scss */
+.btn-transparent {
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+/* line 137, ../sass/app.scss */
+.btn-transparent:hover {
+  background: #FFF;
+  color: #000;
+}
+
+/* line 142, ../sass/app.scss */
+.btn-yellow {
+  background: #fec503;
+  color: #000;
+  border: 1px solid #fec503;
+}
+/* line 147, ../sass/app.scss */
+.btn-yellow:hover {
+  background: transparent;
+  color: #FFF;
+}
+
+/* line 152, ../sass/app.scss */
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* line 157, ../sass/app.scss */
+.content {
+  height: 1000px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 165, ../sass/app.scss */
+  .navbar-logo {
+    margin-left: 20px;
+  }
+
+  /* line 168, ../sass/app.scss */
+  .navbar-menu {
+    display: none;
+  }
+
+  /* line 172, ../sass/app.scss */
+  .navbar.shrink .navbar-ico-resp {
+    position: relative;
+    display: block;
+    float: right;
+    width: 45px;
+    height: 60px;
+    cursor: pointer;
+  }
+  /* line 180, ../sass/app.scss */
+  .navbar.shrink .navbar-ico-resp:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0;
+    top: 15px;
+    left: 15px;
+    box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
+  }
+
+  /* line 191, ../sass/app.scss */
+  .responsive.shrink .navbar-menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  /* line 199, ../sass/app.scss */
+  .navbar-ico-resp {
+    overflow: hidden;
+    margin-right: 20px;
+  }
+}
